@@ -30,12 +30,12 @@ const sendVerifyMail = async(name, email, user_id)=>{
             secure:false,
             requireTLS:true,
             auth:{
-                user:process.env.emailUser,
-                pass:process.env.emailPassword
+                user:"rahulbhingardeve744@gmail.com",
+                pass:"orflgrnibhaxxyyj"
             }
         });
         const mailOptions = {
-            from:process.env.emailUser,
+            from:"rahulbhingardeve744@gmail.com",
             to:email,
             subject:'For Verification mail',
             html:'<p>Hii '+name+', please click here to <a href="http://127.0.0.1:3000/verify?id='+user_id+'"> Verify </a> your mail.</p>'
@@ -66,12 +66,12 @@ const sendResetPasswordMail = async(name, email, token)=>{
             secure:false,
             requireTLS:true,
             auth:{
-                user:process.env.emailUser,
-                pass:process.env.emailPassword
+                user:"rahulbhingardeve744@gmail.com",
+                pass:"orflgrnibhaxxyyj"
             }
         });
         const mailOptions = {
-            from:process.env.emailUser,
+            from:"rahulbhingardeve744@gmail.com",
             to:email,
             subject:'For Reset Password',
             html:'<p>Hii '+name+', please click here to <a href="http://127.0.0.1:3000/forget-password?token='+token+'"> Reset </a> your password.</p>'
